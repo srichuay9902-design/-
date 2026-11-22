@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AR Model Viewer</title>
-  <script type="module" src="https://googleapis.com"></script>
+  <script type="module" src="https://unpkg.com"></script>
   <style>
     body { margin: 0; background-color: #f5f5f5; font-family: sans-serif; }
     model-viewer { width: 100vw; height: 100vh; }
@@ -17,14 +17,7 @@
   </style>
 </head>
 <body>
-  <model-viewer 
-    src="https://github.io" 
-    ar 
-    ar-modes="webxr scene-viewer quick-look" 
-    camera-controls 
-    auto-rotate 
-    shadow-intensity="1"
-    camera-target="auto auto auto">
+  <model-viewer src="model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate shadow-intensity="1">
     <button slot="ar-button" class="ar-btn">เปิดดูโมเดลแบบ AR</button>
   </model-viewer>
 </body>
